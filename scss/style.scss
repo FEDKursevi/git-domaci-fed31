@@ -10,9 +10,14 @@
 }
 
 header {
-    height: 80px;
+    @media(min-width: 768px){
+         height: 80px;
+    }
     background-color: $header-color;
     display: flex;
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
 
     .city {
         background-color: $city-color;
@@ -32,6 +37,13 @@ header {
     nav {
         display: flex;
         align-items: center;
+        @media(max-width: 768px) {
+            flex-direction: column;
+            background-color: $header-color;
+            height: 300px;
+            
+        }
+        
         a {
             display: inline-block;
             text-decoration: none;
@@ -41,19 +53,31 @@ header {
             &:hover {
                 text-decoration: underline;
             }
+            @media(max-width: 768px) {
+                margin: 20px;
+                
+            }
             
         }
     }
 }
 .welcome {
-    @include background-image("../slike/intro.jpg");
-    height: 600px;
+    @media(min-width: 768px){
+         @include background-image("../slike/intro.jpg");
+         height: 600px;
+    }
+    background-color: black;
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+    @media(max-width: 768px) {
+        justify-content: center;
+    }
 
     .title {
+       @media(min-width: 768px){
         background-color: $title-background;
+       }
         padding: 10px 100px;
         margin-bottom: 100px;
         color: $header-text-color;
@@ -70,7 +94,9 @@ header {
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
-    padding-right: 150px;
+   @media(min-width: 768px){
+        padding-right: 150px;
+   }
     span {
         border: 1px solid $border-color;
         border-radius: 999em;
@@ -115,9 +141,13 @@ header {
          float: left;
          margin: 10px;
          p {
-             display: none;
+            background-color: rgba($color: white, $alpha: 0.5);
+            padding: 20px;
+             @media(min-width: 768px){
+                display: none;
+             }
          }
-
+      
          &:hover {
              p {
                  display: flex;
@@ -146,10 +176,28 @@ header {
     h3 {
       color: $button-text-color;
     }
+    .check {
+        @media(min-width: 768px){
+            display: none;
+        }
+        display: block;
+        border: 1px solid $border-color;
+        border-radius: 999em;
+        height: 50px;
+        margin: 15px 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        color: $button-text-color;
+    }
   
     table {
       margin: 50px 0;
       border-spacing: 0;
+      @media(max-width: 768px) {
+          display: none;
+      }
   
       .hidden {
         visibility: hidden;
@@ -188,25 +236,37 @@ header {
       .contact-section {
           display: flex;
           align-items: center;
+          @media(max-width: 1024px) {
+              flex-direction: column;
+          }
       }
       h1 {
         color: $header-color;
         margin: 50px 0;
       }
       form {
+          @media(max-width: 768px) {
+              width: 100%;
+          }
           background-color: $city-color;
           width: 600px;
           padding: 10px;
-          margin: 0 50px;
+          margin: 50px 50px;
           
           div {
               padding: 10px;
           }
           .first-row {
+              @media (max-width: 768px) {
+                  flex-direction: column;
+              }
               display: flex;
               justify-content: space-between;
               input {
                   flex: 0.7;
+                  @media (max-width: 768px) {
+                      margin-top: 10px;
+                  }
               }
           }
           select {
