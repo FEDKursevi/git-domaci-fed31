@@ -63,5 +63,30 @@ header {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        font-weight: normal;
+    }
+}
+.filters {
+    height: 100px;
+    background-color: $header-text-color;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    padding-right: 150px;
+    span {
+        border: 1px solid $border-color;
+        border-radius: 999em;
+        height: 50px;
+        margin: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 20px;
+        color: $button-text-color;
+        &:hover {
+            background-color: $border-color;
+            color: $header-text-color;
+            cursor: pointer;
+        }
     }
 }
