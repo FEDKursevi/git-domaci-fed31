@@ -140,6 +140,7 @@ header {
     h1 {
       margin-bottom: 50px;
       margin-top: 20px;
+      color: $header-color;
     }
   
     h3 {
@@ -176,4 +177,53 @@ header {
     .g {
       color:$button-text-color;
     }
+  }
+  .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: $images-background;
+
+      .contact-section {
+          display: flex;
+          align-items: center;
+      }
+      h1 {
+        color: $header-color;
+        margin: 50px 0;
+      }
+      form {
+          background-color: $city-color;
+          width: 600px;
+          padding: 10px;
+          margin: 0 50px;
+          
+          div {
+              padding: 10px;
+          }
+          .first-row {
+              display: flex;
+              justify-content: space-between;
+              input {
+                  flex: 0.7;
+              }
+          }
+          select {
+              flex: 0.2;
+              height: 30px;
+              border: none;
+          }
+          input {
+              flex: 1;
+              height: 30px;
+              border: none;
+          }
+          div {
+              display: flex;
+          }
+          textarea {
+              flex: 1;
+          }
+
+      }
   }
