@@ -132,3 +132,48 @@ header {
          display: block;
      }
 }
+.pricing {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  
+    h1 {
+      margin-bottom: 50px;
+      margin-top: 20px;
+    }
+  
+    h3 {
+      color: $button-text-color;
+    }
+  
+    table {
+      margin: 50px 0;
+      border-spacing: 0;
+  
+      .hidden {
+        visibility: hidden;
+      }
+    }
+  
+    td {
+      border: 1px solid $button-text-color;
+      text-align: center;
+      padding: 10px;
+    }
+  
+    .location {
+      background-color: $city-color;
+      color: $header-text-color;
+      width: 200px;
+    }
+  
+    .d {
+      background-color: $header-color;
+      color: $header-text-color;
+      width: 200px;
+    }
+  
+    .g {
+      color:$button-text-color;
+    }
+  }
