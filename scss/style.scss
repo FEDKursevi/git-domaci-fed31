@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import "variables";
+@import "mixins";
 
 * {
     padding: 0;
@@ -45,10 +46,7 @@ header {
     }
 }
 .welcome {
-    background-image: url(../slike/intro.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    @include background-image("../slike/intro.jpg");
     height: 600px;
     display: flex;
     flex-direction: column-reverse;
@@ -89,4 +87,48 @@ header {
             cursor: pointer;
         }
     }
+}
+.images {
+    background-color: $images-background;
+    padding: 50px 80px;
+    .slika1 {
+       @include background-image("../slike/1.jpg");
+    }
+    .slika2 {
+        @include background-image("../slike/2.jpg");
+     }
+     .slika3 {
+        @include background-image("../slike/3.jpg");
+     }
+     .slika4 {
+        @include background-image("../slike/4.jpg");
+     }
+     .slika5 {
+        @include background-image("../slike/5.jpg");
+     }
+     .slika6 {
+        @include background-image("../slike/6.jpg");
+     }
+     div {
+         height: 300px;
+         width: 250px;
+         float: left;
+         margin: 10px;
+         p {
+             display: none;
+         }
+
+         &:hover {
+             p {
+                 display: flex;
+                 background-color: rgba($color: white, $alpha: 0.5);
+                 padding: 20px;
+             }
+         }
+     }
+     &::after {
+         clear: both;
+         content: "";
+         display: block;
+     }
 }
