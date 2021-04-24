@@ -44,3 +44,24 @@ header {
         }
     }
 }
+.welcome {
+    background-image: url(../slike/intro.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+
+    .title {
+        background-color: $title-background;
+        padding: 10px 100px;
+        margin-bottom: 100px;
+        color: $header-text-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
