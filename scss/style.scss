@@ -183,6 +183,7 @@ header {
       flex-direction: column;
       align-items: center;
       background-color: $images-background;
+      padding-bottom: 50px;
 
       .contact-section {
           display: flex;
@@ -225,5 +226,17 @@ header {
               flex: 1;
           }
 
+      }
+  }
+  footer {
+      height: 40px;
+      background-color: $header-color;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $header-text-color;
+      a{
+          color: $city-color;
+          text-decoration: none;
       }
   }
