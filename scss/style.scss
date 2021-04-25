@@ -166,7 +166,7 @@
   }
   .fourth-section {
     text-align: center;
-    background-color: rgb(235, 217, 211);
+
     color: $darkBlue;
     padding-top: 2vh;
     p {
@@ -198,6 +198,51 @@
         }
         .empty {
           border: none;
+        }
+      }
+    }
+  }
+  .fifth-section {
+    height: 20vh;
+    margin-top: 5vh;
+    background-color: $lightkGrayBkg;
+    text-align: center;
+    .container-map-form {
+      width: 100%;
+      .map {
+        float: left;
+        margin-left: 20%;
+        margin-top: 3vh;
+      }
+      .forma {
+        float: right;
+        background-color: $orange;
+        padding: 1.2vh;
+        width: 40%;
+        margin-right: 15%;
+        margin-top: 3vh;
+
+        form {
+          .row {
+            width: 100%;
+            select {
+              float: left;
+              width: 30%;
+              margin: 0;
+            }
+            input {
+              float: right;
+              width: 60%;
+            }
+          }
+          .input {
+            width: 100%;
+            margin-top: 1vh;
+          }
+          textarea {
+            width: 100%;
+            margin-top: 1vh;
+          }
         }
       }
     }

@@ -147,7 +147,6 @@
 }
 .container .fourth-section {
   text-align: center;
-  background-color: #ebd9d3;
   color: #374249;
   padding-top: 2vh;
 }
@@ -180,6 +179,48 @@
 }
 .container .fourth-section table tr .empty {
   border: none;
+}
+.container .fifth-section {
+  height: 20vh;
+  margin-top: 5vh;
+  background-color: #f3f7f9;
+  text-align: center;
+}
+.container .fifth-section .container-map-form {
+  width: 100%;
+}
+.container .fifth-section .container-map-form .map {
+  float: left;
+  margin-left: 20%;
+  margin-top: 3vh;
+}
+.container .fifth-section .container-map-form .forma {
+  float: right;
+  background-color: #f75311;
+  padding: 1.2vh;
+  width: 40%;
+  margin-right: 15%;
+  margin-top: 3vh;
+}
+.container .fifth-section .container-map-form .forma form .row {
+  width: 100%;
+}
+.container .fifth-section .container-map-form .forma form .row select {
+  float: left;
+  width: 30%;
+  margin: 0;
+}
+.container .fifth-section .container-map-form .forma form .row input {
+  float: right;
+  width: 60%;
+}
+.container .fifth-section .container-map-form .forma form .input {
+  width: 100%;
+  margin-top: 1vh;
+}
+.container .fifth-section .container-map-form .forma form textarea {
+  width: 100%;
+  margin-top: 1vh;
 }
 
 /*# sourceMappingURL=style.css.map */
