@@ -8,7 +8,7 @@ ZADATAK:
 		izdvojiti u sass promenljive.
 	3.	Sva korišćena vendor-prefixed css pravila izdvojiti u mixine.
 	4.	Realizovati sledeće efekte:
-		a.	Kada se mišem pređe preko likova u glavnoj navigaciji, tekst linka treba da bude podvučen (underline).
+		a.	Kada se mišem pređe pHreko likova u glavnoj navigaciji, tekst linka treba da bude podvučen (underline).
 		b.	Kada se mišem pređe preko dugmića u drugoj sekciji, postaviti pozadinu na sivu a boju teksta na belu.
 		c.	Kada se mišem pređe preko slika u trećoj sekciji, prikazati dodatni sadržaj sa tekstom i cenom.
 			Primer je dat na slici "hover_primer.png", tekst i cenu upisati proizvoljno.
