@@ -27,6 +27,13 @@
   float: left;
   height: 100%;
 }
+.container .mainNavigation .avatarContainer:hover img {
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
 .container .mainNavigation .avatarContainer ul {
   list-style: none;
   float: left;
@@ -181,7 +188,7 @@
   border: none;
 }
 .container .fifth-section {
-  height: 20vh;
+  height: 25vh;
   margin-top: 5vh;
   background-color: #f3f7f9;
   text-align: center;
@@ -210,18 +217,22 @@
   float: left;
   width: 30%;
   margin: 0;
+  border: none;
 }
 .container .fifth-section .container-map-form .forma form .row input {
   float: right;
   width: 60%;
+  border: none;
 }
 .container .fifth-section .container-map-form .forma form .input {
   width: 100%;
   margin-top: 1vh;
+  border: none;
 }
 .container .fifth-section .container-map-form .forma form textarea {
   width: 100%;
   margin-top: 1vh;
+  border: none;
 }
 .container footer {
   width: 100%;
@@ -231,7 +242,6 @@
   color: #fff;
   text-align: center;
   font-size: 0.6em;
-  margin-top: 4vh;
 }
 .container footer span {
   color: #f75311;

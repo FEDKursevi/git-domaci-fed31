@@ -31,6 +31,10 @@
         float: left;
         height: 100%;
       }
+      &:hover img {
+        @include scale(1.2);
+      }
+
       ul {
         list-style: none;
         float: left;
@@ -203,7 +207,7 @@
     }
   }
   .fifth-section {
-    height: 20vh;
+    height: 25vh;
     margin-top: 5vh;
     background-color: $lightkGrayBkg;
     text-align: center;
@@ -231,19 +235,23 @@
               float: left;
               width: 30%;
               margin: 0;
+              border: none;
             }
             input {
               float: right;
               width: 60%;
+              border: none;
             }
           }
           .input {
             width: 100%;
             margin-top: 1vh;
+            border: none;
           }
           textarea {
             width: 100%;
             margin-top: 1vh;
+            border: none;
           }
         }
       }
@@ -257,7 +265,7 @@
     color: $fontWhite;
     text-align: center;
     font-size: $fontSmall;
-    margin-top: 4vh;
+
     span {
       color: $orange;
     }
