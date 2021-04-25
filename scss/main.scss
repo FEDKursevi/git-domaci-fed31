@@ -99,14 +99,42 @@ header{
     margin:auto;
     @include flex;
     .img-with-hover{
-        
+        margin:20px;
         img{
             height:400px;
             width:280px;
-            margin:20px;
+            
         }
     }
 }
+
+.img-with-hover{
+    position: relative;
+    text-align: center;
+    .hidden-txt{
+        display: hidden;
+        position: absolute;
+        width:280px;
+        height:180px;
+        p{
+            opacity: 0.01;
+        }
+        &:hover{
+            display: block;
+            width:280px;
+            height:180px;
+            background-color: rgb(205, 202, 202, 0.5);
+            font-size: 30px;
+            font-weight: bold; 
+            p{
+                opacity:1;
+            }
+        }  
+  }
+}
+
+
+
 .pricing{
     text-align: center;
     h1{
@@ -320,6 +348,26 @@ table{
     
 
 }
+
+
+.img-with-hover{
+    position: relative;
+    text-align: center;
+    .hidden-txt{
+            left:20px;
+            display: block;
+            width:300px;
+            height:100px;
+            background-color: rgb(205, 202, 202, 0.7);
+            font-size: 30px;
+            font-weight: bold; 
+            p{
+                opacity:1;
+            }
+        }  
+  
+}
+
 
 
 }
