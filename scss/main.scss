@@ -1,15 +1,146 @@
 @import 'vars';
 @import 'mixins';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import 'vendor-mixins';
 
+
+*{
+ @include body-defaults;
+ @include box-sizing(border-box);
+ font-family: $main-font;
+}
+
+header{
+    background-color: $gray-drk;
+    height: 72px;
+    .location{
+        background-color: $main-orange;
+        color:$main-light;
+        float: left;
+        overflow: hidden;
+        text-decoration: underline;
+        width:25vw;
+        height:100%;
+        font-size: 1.5em;
+        @include middleOfcontainer;   
+    }
+    .menu{
+        font-size: 1.5em;
+        nav{
+            @include nav-ul;
+            ul{
+                li{
+                    padding: 20px;
+                    color: $main-light;
+                    a{
+                        color:$main-light;
+                    
+                        &:hover{
+                            color:$main-orange;
+                        }
+                    }
+                }
+            }  
+        }
+    }
+}
+
+
+.heading{
+    background-image: url(../slike/intro.jpg);
+    height:600px;
+    @include middleOfcontainer;
+    .welcome{
+        width:80%;
+        background-color: $gray-drk;
+        background-color: rgb(40, 51, 57, 0.4);
+        border-radius: 10px;
+        text-align: center;
+        font-size: 1.5em;
+        color: $main-light;
+    }
+}
+
+.filters{
+    background-color: $main-light;
+    height:80px;
+    width:100%;
+    .btns{
+        float:right;
+       button{
+           height:50px;
+           width:120px;
+           background-color:white;
+           color:$gray-lght;
+           border-radius: 30px;
+           border: 1px solid $gray-lght;
+           margin:20px;
+       }
+    }
+}
+
+.img-with-hover{
+    
+}
+
+.imgs{
+    background-color: #EFF5F8;
+    width:100%;
+    margin:auto;
+    @include flex;
+    .img-with-hover{
+        
+        img{
+            height:500px;
+            width:300px;
+            margin:20px;
+        }
+    }
+}
+.pricing{
+    text-align: center;
+    h1{
+        color: $gray-drk;
+        font-size: 2em;
+        font-weight: bold;
+        padding:20px;   
+    }
+    p{
+        color: $gray-drk;
+        font-size: 1.5em;
+        padding:20px;
+    }
+}
 
 table{
-    
+    margin:auto;
     border-collapse: collapse;
     td{
-        border: black 1px solid; 
+        padding:20px 60px;
+        text-align: center;
+        border: $gray-drk 1px solid; 
     }
 }
 .hidden-cel{
     border:none;
+}
+
+td[colspan], [rowspan]{
+    background-color: $main-orange;
+    color:white;
+    border:none;
+}
+
+.tb{
+    background-color: $gray-drk;
+    color:white;
+    border:none;
+}
+
+
+.contact{
+    margin:auto;
+    padding:30px;
+    text-align: center;
+
 }

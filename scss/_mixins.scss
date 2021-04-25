@@ -24,3 +24,22 @@
       font-family:$main-font;  
   }
   }
+
+@mixin body-defaults{
+    margin: 0;
+    padding: 0;
+}
+
+@mixin nav-ul{
+        &{
+           ul{
+              list-style-type: none;
+              li{
+                display: inline-block;
+                a{
+                text-decoration: none;
+                 }
+              }
+             } 
+          }
+        }
