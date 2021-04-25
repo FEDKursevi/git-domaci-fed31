@@ -83,20 +83,26 @@ header{
     }
 }
 
-.img-with-hover{
-    
+.img-section{
+    width:100%;
+    background-color: #EFF5F8;
+}
+.img-container{
+    width:90%;
+    margin:auto;
+   
 }
 
 .imgs{
-    background-color: #EFF5F8;
+    
     width:100%;
     margin:auto;
     @include flex;
     .img-with-hover{
         
         img{
-            height:500px;
-            width:300px;
+            height:400px;
+            width:280px;
             margin:20px;
         }
     }
@@ -143,6 +149,9 @@ td[colspan], [rowspan]{
     border:none;
 }
 
+.hidden-btn{
+    display: none;
+}
 
 .contact{
     margin:auto;
@@ -212,14 +221,108 @@ footer{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (max-width: 1024px) {
   
+    .imgs{
+        .img-with-hover{
+            
+            img{
+                height:300px;
+                width:300px;
+                margin:20px;
+            }
+        }
+    }
+
     .flex{
         display:block;
         justify-content: center;
     }
-    
     .map{
         @include middleOfcontainer;
     }
   }
+
+@media (max-width: 700px) { 
+
+    header{
+        width:100%;
+        background-color: $gray-drk;
+        height: 230px;
+        .location{
+            background-color: $main-orange;
+            color:$main-light;
+            overflow: hidden;
+            text-decoration: underline;
+            width:100%;
+            height:20%;
+            font-size: 1.5em;
+            display: block;
+            justify-content: left;
+            align-items: left;
+        }
+        .menu{
+            font-size: 1.5em;
+            nav{
+                @include nav-ul;
+                ul{
+                    text-align: center;
+                    li{
+                        display: block;
+                        padding: 10px;
+                        color: $main-light;
+                        a{
+                            color:$main-light;
+                        
+                            &:hover{
+                                color:$main-orange;
+                            }
+                        }
+                    }
+                }  
+            }
+        }
+    }
+  
+
+.filters{
+    background-color: $main-light;
+    height:80px;
+    width:100%;
+    .btns{
+        float: none;
+       button{
+           height:30px;
+           width:82px;
+           font-size: 12px;
+           background-color:white;
+           color:$gray-lght;
+           border-radius: 30px;
+           border: 1px solid $gray-lght;
+           margin:20px;
+       }
+    }
+}
+
+table{
+    display: none;
+}
+
+.hidden-btn{
+    display: block;
+    margin:auto;
+    height:50px;
+    width:120px;
+    background-color:white;
+    color:$gray-lght;
+    border-radius: 30px;
+    border: 1px solid $gray-lght;
+    
+
+}
+
+
+}
+
+  
+    
