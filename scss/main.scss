@@ -1,0 +1,15 @@
+@import 'vars';
+@import 'mixins';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+table{
+    
+    border-collapse: collapse;
+    td{
+        border: black 1px solid; 
+    }
+}
+.hidden-cel{
+    border:none;
+}

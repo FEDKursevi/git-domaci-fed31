@@ -1,0 +1,26 @@
+@mixin flex{
+    display:flex;
+    flex-wrap: wrap;
+}
+
+@mixin middleOfcontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin clearfix {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+@mixin placeholder{
+    &::placeholder{
+      color:green;
+      padding-left:5px;
+      font-family:$main-font;  
+  }
+  }
