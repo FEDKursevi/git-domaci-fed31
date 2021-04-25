@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+header .mapLogo {
+  background-color: #f75311;
+  float: left;
+  padding: 1em 2em;
+  width: 20%;
+}
+header .mapLogo:before, header .mapLogo:after {
+  content: "";
+  display: table;
+}
+header .mapLogo:after {
+  clear: both;
+}
+header .mapLogo img {
+  position: absolute;
+  top: 0.5em;
+  left: 1.5em;
+  width: 2em;
+}
+header .mapLogo a {
+  color: #797979;
+  font-family: "Roboto", sans-serif;
+  padding-left: 1.3em;
+}
+header nav {
+  background-color: #374249;
+  float: right;
+  width: 80%;
+  padding: 1em 2em;
+}
+header nav ul {
+  list-style: none;
+}
+header nav ul li {
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #797979;
+  font-size: 20px;
+  margin-right: 4em;
+  font-size: 13px;
+}
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main, section {
+  padding: 5em 15em;
+}
+
+main {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  background-image: url("../slike/intro.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+main .mainbox {
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: 30%;
+}
+main .mainbox h1, main .mainbox p {
+  font-weight: normal;
+  color: white;
+}
+main .mainbox h1 h1, main .mainbox p h1 {
+  font-size: 5em;
+}
+
+.buttons {
+  text-align: right;
+}
+.buttons a {
+  border: 0.5px solid #797979;
+  padding: 1em 2em;
+  border-radius: 30px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  color: #797979;
+}
+.buttons a:hover {
+  background-color: #797979;
+  color: white;
+}
+
+.gallery {
+  background-color: #f3f7f9;
+}
+.gallery:before, .gallery:after {
+  content: "";
+  display: table;
+}
+.gallery:after {
+  clear: both;
+}
+.gallery .app {
+  float: left;
+  width: 25%;
+}
+.gallery .app .price {
+  background-size: cover;
+  height: 20em;
+  margin: 0.5em;
+}
+.gallery .app .price p {
+  padding: 1em;
+  font-weight: normal;
+  font-size: 17px;
+  opacity: 0;
+  transition: opacity 0.5s linear;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  display: block;
+  padding-bottom: 3em;
+  padding-top: 2em;
+}
+.gallery .app .price p:hover {
+  opacity: 1;
+}
+.gallery .app1 {
+  background-image: url("../slike/1.jpg");
+}
+.gallery .app2 {
+  background-image: url("../slike/2.jpg");
+}
+.gallery .app3 {
+  background-image: url("../slike/3.jpg");
+}
+.gallery .app4 {
+  background-image: url("../slike/4.jpg");
+}
+.gallery .app5 {
+  background-image: url("../slike/5.jpg");
+}
+.gallery .app6 {
+  background-image: url("../slike/6.jpg");
+}
+
+.pricing h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+  padding-bottom: 2em;
+}
+.pricing p {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+  padding-bottom: 2em;
+}
+.pricing table {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  width: 60%;
+  border-collapse: collapse;
+}
+.pricing table tr td {
+  border: 1px solid #374249;
+  padding: 1em 2em;
+}
+.pricing table tr .orange {
+  background-color: #f75311;
+  color: #f3f7f9;
+}
+.pricing table tr .gray {
+  background-color: #374249;
+  color: #f3f7f9;
+}
+.pricing table tr .none {
+  border: none;
+}
+
+.contact {
+  background-color: #f3f7f9;
+}
+.contact:before, .contact:after {
+  content: "";
+  display: table;
+}
+.contact:after {
+  clear: both;
+}
+.contact h2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Roboto", sans-serif;
+  color: #797979;
+  padding-bottom: 2em;
+}
+.contact .map {
+  width: 50%;
+  float: left;
+}
+.contact form {
+  float: right;
+  width: 50%;
+  padding: 1em;
+  background-color: #f75311;
+}
+.contact form input, .contact form textarea {
+  padding: 0.4em;
+  border: none;
+}
+.contact form select {
+  margin-bottom: 1em;
+  float: left;
+  width: 30%;
+  padding: 0.4em;
+  border: none;
+}
+.contact form .name {
+  margin-bottom: 1em;
+  float: right;
+  width: 65%;
+}
+.contact form .email {
+  display: block;
+  width: 100%;
+  margin: auto;
+  margin-bottom: 1em;
+}
+.contact form textarea {
+  display: block;
+  width: 100%;
+  margin: auto;
+}
+
+footer {
+  background-color: #374249;
+  text-align: center;
+  padding: 0.5em;
+  color: white;
+  font-family: "Roboto", sans-serif;
+}
+footer span {
+  color: #f75311;
+  font-family: "Roboto", sans-serif;
+}
+
+/*# sourceMappingURL=stil.css.map */
