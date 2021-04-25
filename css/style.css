@@ -59,25 +59,54 @@
 .container .mainNavigation ul li a:hover {
   text-decoration: underline;
 }
-.container .firstsection {
+.container .first-section {
   width: 100%;
   height: 50%;
   background-image: url("../slike/intro.jpg");
   background-repeat: no-repeat;
   padding-top: 40%;
 }
-.container .firstsection .heading-container {
+.container .first-section .heading-container {
   background-color: rgba(0, 0, 0, 0.4);
   width: 50%;
   margin-left: 25%;
   color: white;
   text-align: center;
 }
-.container .firstsection .heading-container h1 {
+.container .first-section .heading-container h1 {
   font-size: 2em;
 }
-.container .firstsection .heading-container p {
+.container .first-section .heading-container p {
   font-size: 0.6em;
+}
+.container .second-section {
+  width: 100%;
+  height: 3em;
+  padding-top: 0.6em;
+}
+.container .second-section ul {
+  float: right;
+  list-style-type: none;
+  margin-right: 5em;
+}
+.container .second-section ul li {
+  display: inline-block;
+}
+.container .second-section ul li button {
+  background-color: white;
+  border: 1px solid #cfd1d3;
+  padding: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  height: 3em;
+  margin: auto 1.5em;
+  border-radius: 15px;
+  font-size: 0.6em;
+  width: fit-content;
+}
+.container .second-section ul li button:hover {
+  background-color: #cfd1d3;
+  color: #fff;
 }
 
 /*# sourceMappingURL=style.css.map */
