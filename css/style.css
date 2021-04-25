@@ -1,0 +1,396 @@
+* {
+  font-family: Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+}
+body header {
+  background-color: #374249;
+}
+body header nav ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style: none;
+  padding-left: 0;
+}
+body header nav ul > li:first-child {
+  width: 15em;
+  padding-left: 2em;
+  background-color: #f75311;
+}
+body header nav ul > li:first-child img {
+  width: 2em;
+  height: auto;
+  position: relative;
+  top: 0.5em;
+}
+body header nav ul li {
+  display: inline-block;
+  padding-top: 0, 5em;
+  padding-bottom: 1em;
+  margin-right: 5em;
+}
+body header nav ul li a {
+  color: #cfd1d3;
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  text-decoration: underline;
+}
+body main .sekcija1 {
+  padding: 15%;
+  max-height: 150px;
+  background-image: url("../slike/intro.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+body main .sekcija1 div {
+  position: relative;
+  bottom: -50%;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: rgba(55, 66, 73, 0.5);
+}
+body main .sekcija1 div h1 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #f3f7f9;
+  font-size: 4em;
+  font-weight: lighter;
+}
+body main .sekcija1 div p {
+  font-size: 2em;
+  text-align: center;
+  color: #f3f7f9;
+  font-weight: lighter;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body main .sekcija2 .dugmad {
+  padding: 2em;
+  text-align: right;
+}
+body main .sekcija2 .dugmad button {
+  color: #797979;
+  background-color: white;
+  border: 1px solid lightblue;
+  border-radius: 40px;
+  height: 3em;
+  padding: 15px 32px;
+  font-size: 1em;
+  margin-right: 5%;
+}
+body main .sekcija2 .dugmad button:hover {
+  background-color: #374249;
+  color: white;
+}
+body main .sekcija2 .slike {
+  background-color: #f3f7f9;
+  text-align: left;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 3%;
+  padding-bottom: 1%;
+}
+body main .sekcija2 .slike img {
+  margin-right: 2em;
+  margin-bottom: 2em;
+}
+body main .sekcija2 .slike img[src="slike/6.jpg"] {
+  max-height: 400px;
+  min-height: 400px;
+  width: 300px;
+}
+body main .sekcija2 .slike .contain {
+  position: relative;
+  display: inline-block;
+}
+body main .sekcija2 .slike .contain:hover .overlay {
+  opacity: 1;
+  background-color: rgba(243, 247, 249, 0.7);
+}
+body main .sekcija2 .slike .overlay {
+  position: absolute;
+  padding: 2em;
+  top: 0;
+  height: 20%;
+  width: 80%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #f3f7f9;
+  font-weight: bold;
+  font-size: 20px;
+}
+body main .sekcija3 {
+  text-align: center;
+}
+body main .sekcija3 h2 {
+  color: #374249;
+  font-size: 2em;
+  margin-top: 1.5em;
+}
+body main .sekcija3 p {
+  color: #797979;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+body main .sekcija4 {
+  text-align: center;
+  padding-bottom: 4em;
+  background-color: #f3f7f9;
+}
+body main .sekcija4 h2 {
+  margin: 2em;
+  padding-top: 1em;
+  color: #374249;
+  text-align: center;
+  font-size: 2em;
+}
+body main .sekcija4 div {
+  display: inline-block;
+}
+body main .sekcija4 div img {
+  width: 70%;
+  height: auto;
+}
+body main .sekcija4 form {
+  position: relative;
+  top: -100px;
+  display: inline-block;
+  width: 40%;
+  padding: 1.8em;
+  background-color: #f75311;
+}
+body main .sekcija4 form input {
+  height: 2em;
+  margin-bottom: 2em;
+}
+body main .sekcija4 form input[type=email] {
+  width: 97%;
+}
+body main .sekcija4 form input[type=text] {
+  width: 72%;
+}
+body main .sekcija4 form textarea {
+  height: 5em;
+  width: 97%;
+}
+body main .sekcija4 form select {
+  width: 18%;
+  height: 2.5em;
+  margin-right: 2em;
+}
+body footer {
+  padding: 1em;
+  text-align: center;
+  background-color: #374249;
+  color: white;
+  font-size: 1em;
+}
+body footer i {
+  color: #f75311;
+  font-style: normal;
+}
+
+@media (min-width: 1024px) {
+  .sekcija3 button {
+    display: none;
+  }
+  .sekcija3 table {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #374249;
+    border-collapse: collapse;
+  }
+  .sekcija3 table td {
+    border: 1px solid #797979;
+    font-weight: bold;
+    padding: 1em;
+  }
+  .sekcija3 table td[id="0"] {
+    border: 1px solid white;
+  }
+  .sekcija3 table td[id="1"] {
+    background-color: #f75311;
+    color: white;
+  }
+  .sekcija3 table td[id="2"] {
+    background-color: #374249;
+    color: white;
+  }
+  .sekcija3 table td[id="3"] {
+    color: #374249;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .sekcija3 button {
+    display: none;
+  }
+  .sekcija3 table {
+    width: 60%;
+    margin: 0 auto;
+    border: 1px solid #374249;
+    border-collapse: collapse;
+  }
+  .sekcija3 table td {
+    border: 1px solid #797979;
+    font-weight: bold;
+    padding: 1em;
+  }
+  .sekcija3 table td[id="0"] {
+    border: 1px solid white;
+  }
+  .sekcija3 table td[id="1"] {
+    background-color: #f75311;
+    color: white;
+  }
+  .sekcija3 table td[id="2"] {
+    background-color: #374249;
+    color: white;
+  }
+  .sekcija3 table td[id="3"] {
+    color: #374249;
+  }
+
+  body header nav ul li {
+    margin-right: 3em;
+  }
+  body main .sekcija1 {
+    height: auto;
+    padding: 8em;
+  }
+  body main .sekcija1 div h1 {
+    font-size: 3em;
+  }
+  body main .sekcija1 div p {
+    font-size: 1em;
+  }
+  body main .sekcija2 .contain {
+    width: 40%;
+  }
+  body main .sekcija2 .slike {
+    text-align: center;
+  }
+  body main .sekcija2 .slike .overlay {
+    padding: 1em;
+    text-align: left;
+    margin-left: 8%;
+    font-size: small;
+  }
+  body main .sekcija2 .slike img {
+    width: 70%;
+  }
+  body main .sekcija2 .slike img[src="slike/6.jpg"] {
+    max-height: 18%;
+    min-height: 18%;
+    width: 70%;
+  }
+  body main .sekcija4 form {
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    width: 60%;
+  }
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  body header nav ul li {
+    text-align: center;
+    margin-right: 2em;
+    width: 100%;
+    padding-top: 1em;
+  }
+  body header nav ul > li:first-child {
+    width: 100%;
+    padding-top: 0%;
+    text-align: left;
+  }
+  body main .sekcija1 {
+    height: auto;
+    padding: 0;
+    background-color: black;
+    background-image: none;
+  }
+  body main .sekcija1 div {
+    padding: 0.8em;
+  }
+  body main .sekcija1 div h1 {
+    font-size: 34px;
+  }
+  body main .sekcija1 div p {
+    font-size: 20px;
+  }
+  body main .sekcija2 .dugmad {
+    padding: 1em;
+  }
+  body main .sekcija2 .dugmad button {
+    width: 25%;
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  body main .sekcija2 .contain {
+    width: 100%;
+    height: 25em;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
+  body main .sekcija2 .slike {
+    text-align: center;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  body main .sekcija2 .slike .overlay {
+    width: 100;
+    padding: 3em;
+    text-align: left;
+    margin-left: 0;
+  }
+  body main .sekcija2 .slike img {
+    width: 100%;
+  }
+  body main .sekcija2 .slike img[src="slike/6.jpg"] {
+    max-height: 100%;
+    min-height: 100%;
+    width: 100%;
+  }
+  body main .sekcija3 table {
+    display: none;
+  }
+  body main .sekcija3 button {
+    color: #797979;
+    background-color: white;
+    border: 1px solid lightblue;
+    border-radius: 40px;
+    height: 3em;
+    padding: 15px 32px;
+    font-size: 1em;
+    margin-right: 5%;
+  }
+  body main .sekcija3 button:hover {
+    background-color: #374249;
+    color: white;
+  }
+  body main .sekcija3 p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  body main .sekcija4 form {
+    position: relative;
+    top: 40px;
+    display: inline-block;
+    width: 60%;
+  }
+  body main .sekcija4 form input[type=text] {
+    width: 97%;
+  }
+  body main .sekcija4 form select {
+    width: 99%;
+    margin-right: 0;
+    margin-bottom: 2em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

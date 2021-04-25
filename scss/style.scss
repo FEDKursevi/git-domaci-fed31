@@ -1,0 +1,387 @@
+@import "mixins";
+@import "vars";
+
+
+*{
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    margin: 0 auto;
+    header{
+        background-color: $Tamnoplava;
+        nav{
+            ul{
+                margin-top: 0;
+                margin-bottom: 0;
+                list-style: none;
+                padding-left: 0;
+                &>li:first-child{
+                    width: 15em;
+                    padding-left: 2em;
+                    background-color: $Narandzasta;
+                    img{
+                        width: 2em;
+                        height: auto;
+                        position: relative;
+                        top: 0.5em;
+                    }
+                }
+                li{
+                    display: inline-block;
+                    padding-top: 0,5em;
+                    padding-bottom: 1em;
+                    margin-right: 5em;
+                    a{
+                        color: $Svetlosiva1;
+                        text-decoration: none;
+                        &:hover{
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        .sekcija1{
+            padding: 15%;
+            max-height: 150px;
+            background-image: url("../slike/intro.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+            div{
+                position: relative;
+                bottom: -50%;
+                width: 60%;
+                text-align: center;
+                margin: 0 auto;
+                background-color: rgb(55, 66, 73, 0.5);
+                h1{
+                    text-align: center;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                    color: $Svetlosiva2;
+                    font-size: 4em;
+                    font-weight: lighter;
+                }
+                p{
+                    font-size: 2em;
+                    text-align: center;
+                    color: $Svetlosiva2;
+                    font-weight: lighter;
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .sekcija2{
+            .dugmad{
+                padding: 2em;
+                text-align: right;
+
+                button{
+                    color: $Bojafonta;
+                    background-color: white;
+                    border: 1px solid lightblue;
+                    border-radius: 40px;
+                    height: 3em;
+                    padding: 15px 32px;
+                    font-size: 1em;
+                    margin-right: 5%;
+                    &:hover{
+                        background-color: $Naslovi;
+                        color: white;
+                    }
+                }
+            }
+            .slike{
+                background-color: $Svetlosiva2;
+                text-align: left;
+                padding-left: 10%;
+                padding-right: 10%;
+                padding-top: 3%;
+                padding-bottom: 1%;
+                img{
+                    margin-right: 2em;
+                    margin-bottom: 2em;
+                    &[src="slike/6.jpg"]{
+                        max-height: 400px;
+                        min-height: 400px;
+                        width: 300px;
+                    }
+                }
+                .contain{
+                    position: relative;
+                    display: inline-block;
+                    &:hover .overlay {
+                        opacity: 1;
+                        background-color: rgb(243,247,249, 0.7);
+                      }
+                }
+                .overlay {
+                    position: absolute;
+                    padding:2em;
+                    top: 0;
+                    height: 20%;
+                    width: 80%;
+                    opacity: 0;
+                    transition: .5s ease;
+                    background-color: $Svetlosiva2;
+                    font-weight: bold;
+                    font-size: 20px;
+                  }
+            }
+        }
+        .sekcija3{
+            text-align: center;
+            h2{
+                color: $Naslovi;
+                font-size: 2em;
+                margin-top: 1.5em;
+            }
+            p{
+                color: $Bojafonta;
+                margin-top: 3em;
+                margin-bottom: 3em;
+            }
+        }
+        .sekcija4{
+            text-align: center;
+            padding-bottom: 4em;
+            background-color: $Svetlosiva2;
+            h2{
+                margin: 2em;
+                padding-top: 1em;
+                color: $Naslovi;
+                text-align: center;
+                font-size: 2em;
+            }
+            div{
+                display: inline-block;
+                img{
+                    width: 70%;
+                    height: auto;
+                }
+            }
+            form{
+                position: relative;
+                top:-100px;
+                display: inline-block;
+                width: 40%;
+                padding: 1.8em;
+                background-color: $Narandzasta;
+                input{
+                    height: 2em;
+                    margin-bottom: 2em;
+                    &[type="email"]{
+                        width: 97%;
+                    }
+                    &[type="text"]{
+                        width: 72%;
+                    }
+                }
+                textarea{
+                    height: 5em;
+                    width: 97%;
+                }
+                select{
+                    width: 18%;
+                    height: 2.5em;
+                    margin-right: 2em;
+                }
+            }
+        }       
+    }
+    footer{
+        padding: 1em;
+        text-align: center;
+        background-color: $Naslovi;
+        color:white;
+        font-size: 1em;
+        i{
+            color: $Narandzasta;
+            font-style: normal;
+        }
+    }
+} 
+@include desktop {}
+
+@include tablet {
+    // Pravila za tablet verziju ...
+    body{
+        header{
+            nav{
+                ul{
+                    li{
+                        margin-right: 3em;
+                    }
+                }
+            }
+        }
+        main{
+            .sekcija1{
+                height: auto;
+                padding: 8em;
+                div{
+                    h1{
+                        font-size: 3em;
+                    }
+                    p{
+                        font-size: 1em;
+                    }
+                }
+            }
+            .sekcija2{
+                .dugmad{
+                }
+                .contain{
+                    width: 40%;
+                }
+                .slike{
+                    text-align: center;
+                    .overlay{
+                        padding: 1em;
+                        text-align: left;
+                        margin-left: 8%;
+                        font-size: small;
+                    }
+                    img{
+                        width: 70%;
+                        &[src="slike/6.jpg"]{
+                            max-height: 18%;
+                            min-height: 18%;
+                            width: 70%;
+                        }
+                    }
+                }
+            }
+            .sekcija4{
+                form{
+                    position: relative;
+                    top:+40px;
+                    display: inline-block;
+                    width: 60%;
+                   
+                }
+            }
+        }
+    }
+}
+
+@include mobile {
+    // Pravila za mobilni telefon verziju ...
+    body{
+        header{
+            nav{
+                ul{
+
+                    li{
+                        text-align: center;
+                        margin-right: 2em;
+                        width: 100%;
+                        padding-top: 1em;
+                    }
+                    &>li:first-child{
+                        width: 100%;
+                        padding-top: 0%;
+                        text-align: left;
+                    }
+                }
+            }
+        }
+        main{
+            .sekcija1{
+                height: auto;
+                padding: 0;
+                background-color: black;
+                background-image: none;
+                div{
+                    padding: 0.8em;
+                    h1{
+                       font-size: 34px; 
+                    }
+                    p{
+                        font-size: 20px;
+                    }
+                }
+            }
+            .sekcija2{
+                .dugmad{
+                    padding: 1em;
+                    button{
+                        width: 25%;
+                        font-size: 14px;
+                        padding: 10px 12px;
+                    }
+                }
+                .contain{
+                    width: 100%;
+                    height: 25em;
+                    overflow: hidden;
+                    margin-bottom: 2em;
+                }
+                .slike{
+                    text-align: center;
+                    padding-left: 3%;
+                    padding-right: 3%;
+                    .overlay{
+                        width: 100;
+                        padding: 3em;
+                        text-align: left;
+                        margin-left: 0;
+                    }
+                    img{
+                        width: 100%;
+                        &[src="slike/6.jpg"]{
+                            max-height: 100%;
+                            min-height: 100%;
+                            width: 100%;
+                        }
+                    }
+                }
+            }
+            .sekcija3{
+                table{
+                    display: none;
+                }
+                button{
+                    color: $Bojafonta;
+                    background-color: white;
+                    border: 1px solid lightblue;
+                    border-radius: 40px;
+                    height: 3em;
+                    padding: 15px 32px;
+                    font-size: 1em;
+                    margin-right: 5%;
+                    &:hover{
+                        background-color: $Naslovi;
+                        color: white;
+                    }
+                }
+                p{
+                    margin-top: 2em;
+                    margin-bottom: 2em;
+                }
+
+            }
+            .sekcija4{
+                form{
+                    position: relative;
+                    top:+40px;
+                    display: inline-block;
+                    width: 60%;
+                    input[type="text"]{
+                        width: 97%;
+                    }
+                    select{
+                        width: 99%;
+                        margin-right: 0;
+                        margin-bottom: 2em;
+                    } 
+                }
+            }
+        }
+    }
+}

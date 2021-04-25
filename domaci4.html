@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="'https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+    <link rel="stylesheet" href="css/style.css">
     <title>Domaci4</title>
 </head>
 <body>
@@ -23,56 +25,75 @@
     </header>
     <main>
         <section class="sekcija1">
-            <h1>Welcome to HomeExchange</h1>
-            <h2>Your fastest waz to find or sell home online.</h2>
+            <div>
+                <h1>Welcome to HomeExchange</h1>
+                <p>Your fastest way to find or sell home online.</p>
+            </div>
         </section>
         <section class="sekcija2">
-            <div>
+            <div class="dugmad">
                 <button>$1,200-$4,000</button>
                 <button>1+ Bedroom</button>
                 <button>Garage</button>
             </div>
-            <div>
-                <img src="slike/1.jpg" alt="">
-                <img src="slike/2.jpg" alt="">
-                <img src="slike/3.jpg" alt="">
-                <img src="slike/4.jpg" alt="">
-                <img src="slike/5.jpg" alt="">
-                <img src="slike/6.jpg" alt="">
+            <div class="slike">
+                <div class="contain">
+                    <img src="slike/1.jpg" alt="">
+                    <div class="overlay">Loft Apartment <br> $3,000</div>
+                </div>
+                <div class="contain">
+                    <img src="slike/2.jpg" alt="">
+                    <div class="overlay">Loft Apartment <br> $3,000</div>
+                </div>
+                <div class="contain">
+                    <img src="slike/3.jpg" alt="">
+                    <div class="overlay">Classic Apartment <br> $3,000</div>
+                </div>
+                <div class="contain">
+                    <img src="slike/4.jpg" alt="">
+                    <div class="overlay">Office Apartment <br> $3,000</div>
+                </div>
+                <div class="contain">
+                    <img src="slike/5.jpg" alt="">
+                    <div class="overlay">Classic Apartment <br> $3,000</div>
+                </div>
+                <div class="contain">
+                    <img src="slike/6.jpg" alt="">
+                    <div class="overlay">Vintage Apartment <br> $3,000</div>
+                </div>
             </div>
         </section>
         <section class="sekcija3">
             <h2>PRICING</h2>
+            <p>Our services prices in New York</p>
+            <button>Check the prices</button>
             <table>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Price</td>
-                    <td></td>
+                    <td id="0"></td>
+                    <td id="0"></td>
+                    <td colspan="2" id="1">Price</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td></td>
-                    <td>Rent/Buy</td>
-                    <td>Sell</td>
+                    <td id="0"></td>
+                    <td id="0"></td>
+                    <td id="2">Rent/Buy</td>
+                    <td id="2">Sell</td>
                 </tr>
                 <tr>
-                    <td>Location</td>
-                    <td>Downtown</td>
-                    <td>3$</td>
-                    <td>3$</td>
+                    <td rowspan="3" id="1">Location</td>
+                    <td id="2">Downtown</td>
+                    <td id="3">3$</td>
+                    <td id="3">3$</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>Center</td>
-                    <td>3$</td>
-                    <td>3$</td>
+                    <td id="2">Center</td>
+                    <td id="3">3$</td>
+                    <td id="3">3$</td>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>Manhattan</td>
-                    <td>3$</td>
-                    <td>3$</td>
+                    <td id="2">Manhattan</td>
+                    <td id="3">3$</td>
+                    <td id="3">3$</td>
                 </tr>
             </table>
         </section>

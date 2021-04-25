@@ -1,0 +1,87 @@
+@mixin mobile {
+    @media (min-width: #{$mobile-width}) and (max-width: #{$tablet-width}) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width}) {
+        .sekcija3{
+            button{
+                display: none;
+            }
+            table{
+                width: 60%;
+                margin: 0 auto;
+                border: 1px solid $Naslovi;
+                border-collapse: collapse;
+                td{
+                    border: 1px solid $Bojafonta;
+                    font-weight: bold;
+                    padding: 1em;
+                    &[id="0"]{
+                        border: 1px solid white;
+                    }
+                    &[id="1"]{
+                        background-color: $Narandzasta;
+                        color: white;
+                    }
+                    &[id="2"]{
+                        background-color: $Naslovi;
+                        color: white;
+                    }
+                    &[id="3"]{
+                        color: $Naslovi;
+                    }
+                }
+            }
+        }
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: #{$desktop-width}) {
+        .sekcija3{
+            button{
+                display: none;
+            }
+            table{
+                width: 60%;
+                margin: 0 auto;
+                border: 1px solid $Naslovi;
+                border-collapse: collapse;
+                td{
+                    border: 1px solid $Bojafonta;
+                    font-weight: bold;
+                    padding: 1em;
+                    &[id="0"]{
+                        border: 1px solid white;
+                    }
+                    &[id="1"]{
+                        background-color: $Narandzasta;
+                        color: white;
+                    }
+                    &[id="2"]{
+                        background-color: $Naslovi;
+                        color: white;
+                    }
+                    &[id="3"]{
+                        color: $Naslovi;
+                    }
+                }
+            }
+        }
+        @content;
+    }
+}
+
+@mixin clearfix{
+    //clearfix start
+    &:before, &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }	
+    //clearfix end
+}
