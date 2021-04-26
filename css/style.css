@@ -169,6 +169,9 @@
   font-size: 0.6em;
   margin: 2vh auto;
 }
+.container .fourth-section button {
+  display: none;
+}
 .container .fourth-section table {
   text-align: center;
   width: 40%;
@@ -392,7 +395,7 @@
   .container .third-section .img-container .inner-container .info {
     font-size: 0.6em;
     height: 5vh;
-    width: 6vw;
+    width: 15vw;
     background-color: rgba(255, 255, 255, 0.4);
     color: #374249;
     opacity: 0;
@@ -417,6 +420,9 @@
   .container .fourth-section p {
     font-size: 0.6em;
     margin: 2vh auto;
+  }
+  .container .fourth-section button {
+    display: none;
   }
   .container .fourth-section table {
     text-align: center;
@@ -501,6 +507,266 @@
     color: #fff;
     text-align: center;
     font-size: 0.6em;
+  }
+  .container footer span {
+    color: #f75311;
+  }
+}
+@media screen and (max-width: 375px) {
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .container .mainNavigation {
+    width: 100%;
+    height: 15vh;
+    background-color: #374249;
+  }
+  .container .mainNavigation .avatarContainer {
+    height: 20%;
+    width: 100%;
+    background-color: orangered;
+    overflow: hidden;
+  }
+  .container .mainNavigation .avatarContainer img {
+    float: left;
+    height: 100%;
+  }
+  .container .mainNavigation .avatarContainer:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .container .mainNavigation .avatarContainer ul {
+    list-style: none;
+    float: left;
+    width: 30%;
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .container .mainNavigation .avatarContainer ul li a {
+    text-decoration: underline;
+    color: white;
+    font-size: 0.6em;
+  }
+  .container .mainNavigation ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+  }
+  .container .mainNavigation ul li {
+    display: block;
+    margin: 0.5em;
+  }
+  .container .mainNavigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.6em;
+    margin: auto 1em;
+  }
+  .container .mainNavigation ul li a:hover {
+    text-decoration: underline;
+  }
+  .container .first-section {
+    width: 100%;
+    height: 5%;
+    background-image: none;
+    height: fit-content;
+    margin-top: 4vh;
+    padding-top: 5%;
+  }
+  .container .first-section .heading-container {
+    margin: 0;
+    background-color: black;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 1em;
+    color: white;
+    text-align: center;
+  }
+  .container .first-section .heading-container h1 {
+    font-size: 2em;
+  }
+  .container .first-section .heading-container p {
+    font-size: 0.6em;
+  }
+  .container .first-section:hover .heading-container {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .container .second-section {
+    width: 100%;
+    height: 3em;
+    padding: 0.5em auto;
+  }
+  .container .second-section ul {
+    float: right;
+    list-style-type: none;
+  }
+  .container .second-section ul li {
+    display: inline-block;
+  }
+  .container .second-section ul li button {
+    background-color: white;
+    border: 1px solid #cfd1d3;
+    padding: 0.2em;
+    cursor: pointer;
+    text-decoration: none;
+    height: 3em;
+    margin: auto 0.5em;
+    border-radius: 15px;
+    font-size: 0.3em;
+    width: 10em;
+  }
+  .container .second-section ul li button:hover {
+    background-color: #cfd1d3;
+    color: #fff;
+  }
+  .container .third-section {
+    width: 100%;
+    background-color: #f3f7f9;
+  }
+  .container .third-section .img-container {
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    height: 66%;
+  }
+  .container .third-section .img-container .inner-container {
+    display: block;
+    width: 100%;
+    height: 10vh;
+    margin: 0.5vh auto;
+    position: relative;
+  }
+  .container .third-section .img-container .inner-container .info {
+    font-size: 0.6em;
+    height: 5vh;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #374249;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    transition: 0.5s ease;
+    padding: 0.5em;
+  }
+  .container .third-section .img-container .inner-container img {
+    height: 10vh;
+    width: 100%;
+    object-fit: cover;
+  }
+  .container .third-section .img-container .inner-container:hover .info {
+    opacity: 1;
+  }
+  .container .fourth-section {
+    text-align: center;
+    color: #374249;
+    padding-top: 2vh;
+  }
+  .container .fourth-section p {
+    font-size: 0.6em;
+    margin: 2vh auto;
+    background-color: white;
+    font-size: 0.6em;
+  }
+  .container .fourth-section button {
+    display: block;
+    background-color: white;
+    font-size: 0.6em;
+    margin: 1vh auto;
+    border: 1px solid gray;
+    height: 3em;
+    width: 11em;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  .container .fourth-section table {
+    display: none;
+  }
+  .container .fourth-section table tr td {
+    border: 1px solid #797979;
+    line-height: 2em;
+  }
+  .container .fourth-section table tr .orange {
+    background-color: #f75311;
+    color: #fff;
+  }
+  .container .fourth-section table tr .dark {
+    background-color: #374249;
+    color: #fff;
+  }
+  .container .fourth-section table tr .white {
+    background-color: #fff;
+  }
+  .container .fourth-section table tr .empty {
+    border: none;
+  }
+  .container .fifth-section {
+    height: 40vh;
+    margin-top: 2vh;
+    background-color: #f3f7f9;
+    text-align: center;
+    padding-top: 2vh;
+  }
+  .container .fifth-section .container-map-form {
+    width: 100%;
+    padding: 0.1vh;
+  }
+  .container .fifth-section .container-map-form .map {
+    display: block;
+    margin-left: 0%;
+    margin-top: 1vh;
+  }
+  .container .fifth-section .container-map-form .forma {
+    float: right;
+    background-color: #f75311;
+    padding: 1.2vh;
+    width: 100%;
+    margin-right: 0;
+    margin-top: 2vh;
+  }
+  .container .fifth-section .container-map-form .forma form {
+    display: block;
+    width: 100%;
+  }
+  .container .fifth-section .container-map-form .forma form .row {
+    width: 100%;
+  }
+  .container .fifth-section .container-map-form .forma form .row select {
+    float: left;
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
+  .container .fifth-section .container-map-form .forma form .row input {
+    width: 100%;
+    border: none;
+    margin-top: 1vh;
+  }
+  .container .fifth-section .container-map-form .forma form .input {
+    width: 100%;
+    margin-top: 1vh;
+    border: none;
+  }
+  .container .fifth-section .container-map-form .forma form textarea {
+    width: 100%;
+    margin-top: 1vh;
+    border: none;
+  }
+  .container footer {
+    width: 100%;
+    height: 2em;
+    background-color: #374249;
+    padding: 0.5em;
+    color: #fff;
+    text-align: center;
+    font-size: 0.4em;
   }
   .container footer span {
     color: #f75311;
