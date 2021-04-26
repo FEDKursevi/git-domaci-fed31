@@ -68,10 +68,11 @@
 }
 .container .first-section {
   width: 100%;
-  height: 50%;
+  height: 45%;
   background-image: url("../slike/intro.jpg");
   background-repeat: no-repeat;
-  padding-top: 40%;
+  background-size: cover;
+  padding-top: 30%;
 }
 .container .first-section .heading-container {
   background-color: rgba(0, 0, 0, 0.4);
@@ -85,6 +86,13 @@
 }
 .container .first-section .heading-container p {
   font-size: 0.6em;
+}
+.container .first-section:hover .heading-container {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .container .second-section {
   width: 100%;
@@ -245,6 +253,258 @@
 }
 .container footer span {
   color: #f75311;
+}
+
+@media screen and (max-width: 1024px) {
+  .container .mainNavigation {
+    width: 100%;
+    height: 2.4em;
+    float: left;
+    background-color: #374249;
+  }
+  .container .mainNavigation .avatarContainer {
+    float: left;
+    height: 100%;
+    width: 30%;
+    background-color: orangered;
+    overflow: hidden;
+  }
+  .container .mainNavigation .avatarContainer img {
+    float: left;
+    height: 100%;
+  }
+  .container .mainNavigation .avatarContainer:hover img {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  .container .mainNavigation .avatarContainer ul {
+    list-style: none;
+    float: left;
+    margin-top: 0.7em;
+  }
+  .container .mainNavigation .avatarContainer ul li {
+    margin-left: 0;
+  }
+  .container .mainNavigation .avatarContainer ul li a {
+    text-decoration: underline;
+    color: white;
+    font-size: 0.7em;
+    margin: auto 0;
+  }
+  .container .mainNavigation ul {
+    list-style: none;
+    float: left;
+    margin-top: 0.5em;
+  }
+  .container .mainNavigation ul li {
+    display: inline-block;
+    margin-left: 1em;
+  }
+  .container .mainNavigation ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 0.6em;
+    margin: auto 1em;
+  }
+  .container .mainNavigation ul li a:hover {
+    text-decoration: underline;
+  }
+
+  .container {
+    width: 50%;
+    margin: 0 auto;
+  }
+  .container .first-section {
+    width: 100%;
+    height: 30%;
+    background-image: url("../slike/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 40%;
+  }
+  .container .first-section .heading-container {
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 50%;
+    margin-left: 25%;
+    color: white;
+    text-align: center;
+  }
+  .container .first-section .heading-container h1 {
+    font-size: 2em;
+  }
+  .container .first-section .heading-container p {
+    font-size: 0.6em;
+  }
+  .container .first-section:hover .heading-container {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  .container .second-section {
+    width: 100%;
+    height: 3em;
+    padding-top: 0.6em;
+  }
+  .container .second-section ul {
+    float: right;
+    list-style-type: none;
+    margin-right: 1em;
+  }
+  .container .second-section ul li {
+    display: inline-block;
+  }
+  .container .second-section ul li button {
+    background-color: white;
+    border: 1px solid #cfd1d3;
+    padding: 1em;
+    cursor: pointer;
+    text-decoration: none;
+    height: 3em;
+    margin: auto 1.5em;
+    border-radius: 15px;
+    font-size: 0.6em;
+    width: fit-content;
+  }
+  .container .second-section ul li button:hover {
+    background-color: #cfd1d3;
+    color: #fff;
+  }
+  .container .third-section {
+    width: 100%;
+    background-color: #f3f7f9;
+  }
+  .container .third-section .img-container {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .container .third-section .img-container .inner-container {
+    float: left;
+    width: 15vw;
+    height: 10vh;
+    margin: 0.5vh;
+    position: relative;
+  }
+  .container .third-section .img-container .inner-container .info {
+    font-size: 0.6em;
+    height: 5vh;
+    width: 6vw;
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #374249;
+    opacity: 0;
+    top: 0;
+    position: absolute;
+    transition: 0.5s ease;
+    padding: 0.5em;
+  }
+  .container .third-section .img-container .inner-container img {
+    height: 10vh;
+    width: 15vw;
+    object-fit: cover;
+  }
+  .container .third-section .img-container .inner-container:hover .info {
+    opacity: 1;
+  }
+  .container .fourth-section {
+    text-align: center;
+    color: #374249;
+    padding-top: 2vh;
+  }
+  .container .fourth-section p {
+    font-size: 0.6em;
+    margin: 2vh auto;
+  }
+  .container .fourth-section table {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 2vh;
+    font-size: 0.6em;
+    border-collapse: collapse;
+  }
+  .container .fourth-section table tr td {
+    border: 1px solid #797979;
+    line-height: 2em;
+  }
+  .container .fourth-section table tr .orange {
+    background-color: #f75311;
+    color: #fff;
+  }
+  .container .fourth-section table tr .dark {
+    background-color: #374249;
+    color: #fff;
+  }
+  .container .fourth-section table tr .white {
+    background-color: #fff;
+  }
+  .container .fourth-section table tr .empty {
+    border: none;
+  }
+  .container .fifth-section {
+    height: 38vh;
+    margin-top: 5vh;
+    background-color: #f3f7f9;
+    text-align: center;
+    padding-top: 2vh;
+  }
+  .container .fifth-section .container-map-form {
+    display: block;
+    width: 100%;
+  }
+  .container .fifth-section .container-map-form .map {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+  .container .fifth-section .container-map-form .forma {
+    display: block;
+    background-color: #f75311;
+    padding: 1.2vh;
+    width: 80%;
+    margin-right: 10%;
+    margin-top: 3vh;
+  }
+  .container .fifth-section .container-map-form .forma form .row {
+    width: 100%;
+  }
+  .container .fifth-section .container-map-form .forma form .row select {
+    float: left;
+    width: 30%;
+    margin: 0;
+    border: none;
+  }
+  .container .fifth-section .container-map-form .forma form .row input {
+    float: right;
+    width: 60%;
+    border: none;
+  }
+  .container .fifth-section .container-map-form .forma form .input {
+    width: 100%;
+    margin-top: 1vh;
+    border: none;
+  }
+  .container .fifth-section .container-map-form .forma form textarea {
+    width: 100%;
+    margin-top: 1vh;
+    border: none;
+  }
+  .container footer {
+    width: 100%;
+    height: 2.5em;
+    background-color: #374249;
+    padding: 0.5em;
+    color: #fff;
+    text-align: center;
+    font-size: 0.6em;
+  }
+  .container footer span {
+    color: #f75311;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
