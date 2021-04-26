@@ -20,7 +20,7 @@
   float: left;
   height: 100%;
   width: 20%;
-  background-color: orangered;
+  background-color: #f75311;
   overflow: hidden;
 }
 .container .mainNavigation .avatarContainer img {
@@ -44,7 +44,7 @@
 }
 .container .mainNavigation .avatarContainer ul li a {
   text-decoration: underline;
-  color: white;
+  color: #fff;
   font-size: 0.7em;
   margin: auto 0;
 }
@@ -59,7 +59,7 @@
 }
 .container .mainNavigation ul li a {
   text-decoration: none;
-  color: white;
+  color: #fff;
   font-size: 0.6em;
   margin: auto 1em;
 }
@@ -78,7 +78,7 @@
   background-color: rgba(0, 0, 0, 0.4);
   width: 50%;
   margin-left: 25%;
-  color: white;
+  color: #fff;
   text-align: center;
 }
 .container .first-section .heading-container h1 {
@@ -108,7 +108,7 @@
   display: inline-block;
 }
 .container .second-section ul li button {
-  background-color: white;
+  background-color: #fff;
   border: 1px solid #cfd1d3;
   padding: 1em;
   cursor: pointer;
