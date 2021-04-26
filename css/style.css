@@ -40,7 +40,7 @@
 }
 .nav-bar nav ul li {
   display: inline-block;
-  margin: 5px 30px;
+  margin: 7px 30px;
 }
 .nav-bar nav ul li a {
   color: #f3f7f9;
@@ -162,10 +162,14 @@ footer {
 .pricing h5 {
   text-align: center;
   margin-top: 1em;
+  margin-bottom: 1em;
+}
+.pricing a {
+  display: none;
 }
 .pricing .price_table {
   display: inline-block;
-  margin-top: 2em;
+  margin-top: 1em;
   color: #374249;
 }
 .pricing .price_table table {
@@ -197,6 +201,7 @@ footer {
 .last {
   text-align: center;
   background-color: #f3f7f9;
+  width: 100%;
 }
 .last h2 {
   text-align: center;
@@ -208,29 +213,39 @@ footer {
 .last .last_container {
   width: 80%;
   margin: auto;
+  height: 20em;
 }
 .last .last_container .map {
   float: left;
+  width: 50%;
 }
 .last .last_container .contact_form {
   float: right;
+  width: 50%;
 }
-.last .last_container .contact_form table {
+.last .last_container .contact_form form {
+  display: inline-block;
+  width: auto;
   background-color: #f75311;
-  width: 30em;
+  padding: 0px;
+  line-height: 2em;
 }
-.last .last_container .contact_form table td {
+.last .last_container .contact_form form .inline {
+  display: inline;
+  width: 45%;
+  padding: 2px;
   margin: 5px;
-  padding: 5px;
 }
-.last .last_container .contact_form table input {
-  width: 100%;
+.last .last_container .contact_form form textarea {
+  width: 95%;
+  border: none;
+  padding: 4px;
+  margin: 5px;
 }
-.last .last_container .contact_form table textarea {
-  width: 100%;
-}
-.last .last_container .contact_form table select {
-  width: 100%;
+.last .last_container .contact_form form input[type=email] {
+  width: 95%;
+  padding: 2px;
+  margin: 5px;
 }
 
 footer {
@@ -241,6 +256,143 @@ footer {
 }
 footer span {
   color: #f75311;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .boxes .box_container .box {
+    width: 47%;
+    height: 15em;
+    overflow: hidden;
+    margin: 5px;
+  }
+
+  .last .last_container {
+    width: 100%;
+    height: 25em;
+  }
+  .last .last_container .map {
+    float: none;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .last .last_container .map .mapouter {
+    margin: auto;
+  }
+  .last .last_container .contact_form {
+    margin-top: 1em;
+    float: none;
+    width: 100%;
+  }
+}
+@media (min-width: 320px) and (max-width: 768px) {
+  .nav-bar {
+    float: none;
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .nav-bar .location {
+    float: none;
+    width: 100%;
+  }
+  .nav-bar nav {
+    float: none;
+    height: 100%;
+  }
+  .nav-bar nav ul li {
+    display: block;
+    margin: 2em;
+  }
+
+  .intro {
+    background-image: none;
+    min-height: 0;
+    height: auto;
+    margin: 0;
+    float: none;
+  }
+  .intro .welcome {
+    background-color: black;
+    position: static;
+    width: 100%;
+    padding: 2em;
+  }
+
+  .details .details-container {
+    width: 100%;
+    text-align: center;
+  }
+  .details .details-container p {
+    float: none;
+  }
+
+  .boxes .box_container .box {
+    width: 100%;
+    margin: 1em auto;
+    height: 12em;
+    overflow: hidden;
+  }
+  .boxes .box_container .box .transparent {
+    display: inline-block;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.4);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+  }
+  .boxes .box_container .box .transparent h5 {
+    text-align: left;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .boxes .box_container .box .transparent p {
+    text-align: left;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .pricing {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+  }
+  .pricing a {
+    display: inline-block;
+    border: 1px #797979 solid;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #797979;
+    padding: 10px;
+    font-size: 10px;
+    margin: 2em;
+  }
+  .pricing .price_table {
+    display: none;
+  }
+
+  .last .last_container {
+    width: 100%;
+    height: 25em;
+    margin: 5em auto;
+  }
+  .last .last_container .map {
+    float: none;
+    width: 100%;
+    margin-top: 1em;
+  }
+  .last .last_container .map .mapouter {
+    margin: 1em auto;
+  }
+  .last .last_container .contact_form {
+    margin-top: 1em;
+    float: none;
+    width: 90%;
+    margin: auto;
+  }
+  .last .last_container .contact_form form .inline {
+    width: 95%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
